@@ -1,0 +1,13 @@
+{% extends 'base/main.html' %}
+
+  {% block content %}
+
+<h1>Изменить</h1>
+<a href="{% url 'tasks'%}" class="btn btn-primary"  >На главную</a>
+<h2>Форма редактирования записей</h2>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Изменить" class="btn btn-success">
+
+{% endblock content %}

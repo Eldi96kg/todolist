@@ -1,0 +1,10 @@
+{% extends 'base/main.html' %}
+
+  {% block content %}
+<a href="{% url 'tasks'%}" class="btn btn-primary">На главную</a>
+<form action="" method="post">
+  {% csrf_token %}
+  <p>Вы уверены что хотите удалить? <span style="background-color:#c0e2c7;">{{task}}</span></p>
+  <input type="submit" value="Удалить" class="btn btn-success">
+</form>
+  {% endblock content %}

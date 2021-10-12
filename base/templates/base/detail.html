@@ -1,0 +1,6 @@
+{% extends 'base/main.html' %}
+
+  {% block content %}
+<a href="{% url 'tasks'%}" class="btn btn-primary">На главную</a>
+<h1>Detail:{{task}}</h1>
+  {% endblock content %}
