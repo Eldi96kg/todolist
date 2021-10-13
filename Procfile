@@ -1,1 +1,1 @@
-web: gunicorn app:manage.py
+web: gunicorn todo_list:manage.py
