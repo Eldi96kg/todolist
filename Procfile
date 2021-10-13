@@ -1,1 +1,1 @@
-web: gunicorn app:manage
+gunicorn todo_list.wsgi
